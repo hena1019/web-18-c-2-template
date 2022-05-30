@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+   <style>
+
+        #navbar{
+          display: flex;
+          justify-content: flex-end;
+          margin-right: 20px;
+        }
+        span{
+          margin-left: 20px;
+        }
+        #contain{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: auto;
+          justify-content:space-around;
+          height: 100%;
+          width: 96%;
+          gap: 30px;
+          margin-left: 2%;
+        }
+        img{
+          height: 130px;
+          width: 160px;
+          margin-left: 18.6%;
+          margin-top: 10px;
+        }
+        .boxes{
+          width: 250px;
+          height: 280px;
+          border: 4px solid gray;
+        }
+        p{
+          text-align: center;
+        }
+        h4{
+          text-align: center;
+        }
+        button{
+             margin-left: 31%;
+        }
+        #count{
+          margin-left: 5px;
+        }
+   </style>
+  </head>
+
+  <body>
+    <div id="navbar">
+      <!--Add navbar divs here-->
+      <!-- Link to bucket.html -->
+      <span>
+        <a href="">login</a>
+      </span>
+      <span>
+      <a href="">signup</a>
+     </span>
+      <span>
+        <a href="index.html">products</a>
+      </span>
+      <span>
+        <a href="bucket.html">bucket</a>
+      </span>
+
+      <div id="count">
+        <!-- [ 0 ] -->
+        <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+      </div>
+    </div>
+    <div id="contain">
+      <!--Show coffee list here in grid format-->
+      <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+    </div>
+  </body>
+</html>
+<script src="./scripts/index.js">
+
+</script>
+<!-- "https://masai-mock-api.herokuapp.com/coffee/menu" -->
